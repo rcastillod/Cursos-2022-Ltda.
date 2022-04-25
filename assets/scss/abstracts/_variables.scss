@@ -1,0 +1,61 @@
+/* ------ Colors ------ */
+
+// Primary Color
+$primary-color: (
+    '900': #000000,
+    '800': #060606,
+    '700': #2E1503,
+);
+
+// Secondary Color
+$secondary-color: (
+    '900': #FFAF6D,
+    '800': #FFA500,
+);
+
+// White Color
+$white-color: #ffffff;
+
+/* ------ Fonts ------ */
+
+// Families
+$text-ff: 'Poppins', sans-serif;
+$heading-ff: 'Ubuntu', sans-serif;
+
+// Sizes
+$sizes: (
+    '5x-large': 3.125rem,
+    '4x-large': 2.8125rem,
+    '3x-large': 2.5rem,
+    '2x-large': 2.1875rem,
+    'x-large': 1.875rem,
+    'large': 1.25rem,
+    'medium': 1rem,
+    'small': .875rem,
+    'x-small': .75rem
+);
+
+// Weights
+$text-fw: (
+    'bold': 700,
+    'regular': 400,
+);
+    
+$heading-fw: (
+    'bold': 700,
+    'regular': 400
+);
+
+/* ------ Breakpoints ------ */
+
+$breakpoints: (
+    'small': 576px,
+    'medium': 768px,
+    'large': 992px,
+    'xl': 1200px,
+);
+
+/* ------ Border ------ */
+
+// Radius
+$br: 1.875rem;
