@@ -29,6 +29,7 @@
 
     // Title
     &__title {
+        font-size: map-get($sizes, 'large' );
         a {
             color: map-get($primary-color, '900' );
             text-decoration: none;
@@ -42,6 +43,7 @@
 
     // Description
     &__description {
+        font-size: map-get($sizes, 'small' );
         text-align: justify;
     }
 

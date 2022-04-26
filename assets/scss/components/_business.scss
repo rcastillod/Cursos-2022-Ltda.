@@ -1,0 +1,47 @@
+.business {
+
+    // Detail
+    &__detail {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        gap: .625rem;
+    }
+
+    // Image
+    &__image {
+        border: 1px solid map-get($primary-color, '900' );
+        border-radius: 50%;
+        overflow: hidden;
+        height: 8.125rem;
+        width: 8.125rem;
+        img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+    }
+
+    // Social
+    &__social {
+        display: flex;
+        gap: .9375rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        a {
+            color: map-get($primary-color, '900' );
+            transition: color .3s ease-in-out;
+            &:hover,
+            &:focus {
+                color: map-get($secondary-color, '900' );
+            }
+        }
+    }
+
+    // Description
+    &__description {
+        font-size: map-get($sizes, 'small' );
+    }
+
+}

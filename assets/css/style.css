@@ -209,6 +209,9 @@ select {
   transition: transform 0.4s ease-in-out;
   width: 100%;
 }
+.course__title {
+  font-size: 1.25rem;
+}
 .course__title a {
   color: #000000;
   text-decoration: none;
@@ -218,6 +221,7 @@ select {
   color: #FFAF6D;
 }
 .course__description {
+  font-size: 0.875rem;
   text-align: justify;
 }
 .course__teacher {
@@ -229,6 +233,67 @@ select {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.more-courses {
+  margin-block-start: 0.625rem;
+}
+.more-courses__title {
+  background-color: #505050;
+  color: #ffffff;
+  margin-block-end: 0.625rem;
+  padding-block: 5px;
+  text-align: center;
+}
+.more-courses__list {
+  margin: 0;
+  padding-inline-start: 1.25rem;
+  list-style-type: circle;
+}
+.more-courses__list a {
+  color: #2E1503;
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+.more-courses__list a:hover {
+  color: #FFAF6D;
+}
+
+.business__detail {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.business__image {
+  border: 1px solid #000000;
+  border-radius: 50%;
+  overflow: hidden;
+  height: 8.125rem;
+  width: 8.125rem;
+}
+.business__image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.business__social {
+  display: flex;
+  gap: 0.9375rem;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.business__social a {
+  color: #000000;
+  transition: color 0.3s ease-in-out;
+}
+.business__social a:hover, .business__social a:focus {
+  color: #FFAF6D;
+}
+.business__description {
+  font-size: 0.875rem;
 }
 
 /* -------------------------------------------------------------------------- */

@@ -1,0 +1,30 @@
+.more-courses {
+    margin-block-start: .625rem;
+
+    // Title
+    &__title {
+        background-color: map-get($primary-color, '600' );
+        color: map-get($white-color, '900' );
+        margin-block-end: .625rem;
+        padding-block: 5px;
+        text-align: center;
+    }
+
+    // List
+    &__list {
+        margin: 0;
+        padding-inline-start: 1.25rem;
+        list-style-type: circle;
+        
+        a {
+            color: map-get($primary-color, '700' );
+            font-family: $link-ff;
+            text-decoration: none;
+            transition: color .3s ease-in-out;
+            &:hover {
+                color: map-get($secondary-color, '900' );
+            }
+        }
+    }
+
+}
