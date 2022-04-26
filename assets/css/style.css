@@ -107,6 +107,10 @@ select {
 /* -------------------------------------------------------------------------- */
 /*                                   Layout                                   */
 /* -------------------------------------------------------------------------- */
+.header {
+  background-color: #000000;
+  padding: 0.3125rem 1.5625rem;
+}
 .header .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -142,29 +146,38 @@ select {
     align-items: center;
     cursor: pointer;
     display: inline-flex;
-    margin-inline-end: 50px;
   }
   .navbar label i {
-    color: #000000;
+    color: #ffffff;
     font-size: 1.875rem;
+    transition: color 0.3s ease-in-out;
+  }
+  .navbar label:hover i, .navbar label:focus i {
+    color: #FFAF6D;
   }
   .navbar #toggler:checked ~ .menu {
     max-height: 100%;
   }
 }
 
-.menu {
-  padding-inline: 6.25rem;
-}
 .menu__list {
   display: flex;
   gap: 3.125em;
   list-style-type: none;
 }
 .menu__list a {
-  color: #000000;
+  color: #ffffff;
   font-weight: 700;
   text-decoration: none;
+}
+
+.banner {
+  display: grid;
+  place-items: center;
+  padding-block: 0.625rem;
+}
+.banner .banner__image img {
+  width: 31.25rem;
 }
 
 /* -------------------------------------------------------------------------- */

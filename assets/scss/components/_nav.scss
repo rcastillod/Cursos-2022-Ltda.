@@ -21,13 +21,19 @@
             align-items: center;
             cursor: pointer;
             display: inline-flex;
-            margin-inline-end: 50px;
             i {
-                color: map-get($primary-color, '900' );
+                color: $white-color;
                 font-size: 1.875rem;
+                transition: color .3s ease-in-out;
+            }
+            &:hover,
+            &:focus {
+                i {
+                    color: map-get($secondary-color, '900' )
+                }
             }
         }
-
+        
         #toggler:checked ~ .menu {
             max-height: 100%;
         }
@@ -36,14 +42,12 @@
 }
 
 .menu {
-    padding-inline: 6.25rem;
-    
     &__list {
         display: flex;
         gap: 3.125em;
         list-style-type: none;
         a {
-            color: map-get($primary-color, '900' );
+            color: $white-color;
             font-weight: map-get($text-fw, 'bold' );
             text-decoration: none;
         }

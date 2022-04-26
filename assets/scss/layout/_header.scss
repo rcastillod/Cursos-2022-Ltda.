@@ -1,4 +1,6 @@
 .header {
+    background-color: map-get($primary-color, '900' );
+    padding: .3125rem 1.5625rem;
     .navbar {
         display: flex;
         flex-wrap: wrap;

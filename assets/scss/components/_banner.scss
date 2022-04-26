@@ -1,0 +1,11 @@
+.banner {
+    display: grid;
+    place-items: center;
+    padding-block: .625rem;
+
+    .banner__image {
+        img {
+            width: 31.25rem;
+        }
+    }
+}
