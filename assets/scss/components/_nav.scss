@@ -22,7 +22,7 @@
             cursor: pointer;
             display: inline-flex;
             i {
-                color: $white-color;
+                color: map-get($white-color, '900' );
                 font-size: 1.875rem;
                 transition: color .3s ease-in-out;
             }
@@ -47,7 +47,7 @@
         gap: 3.125em;
         list-style-type: none;
         a {
-            color: $white-color;
+            color: map-get($white-color, '900' );
             font-weight: map-get($text-fw, 'bold' );
             text-decoration: none;
         }

@@ -14,13 +14,16 @@ $secondary-color: (
 );
 
 // White Color
-$white-color: #ffffff;
-
+$white-color: (
+    '900': #ffffff,
+    '800': #dadada,
+    '700': #dddddd,
+);
 /* ------ Fonts ------ */
 
 // Families
-$text-ff: 'Poppins', sans-serif;
-$heading-ff: 'Ubuntu', sans-serif;
+$text-ff: 'Ubuntu', sans-serif;
+$link-ff: 'Poppins', sans-serif;
 
 // Sizes
 $sizes: (
@@ -39,11 +42,6 @@ $sizes: (
 $text-fw: (
     'bold': 700,
     'regular': 400,
-);
-    
-$heading-fw: (
-    'bold': 700,
-    'regular': 400
 );
 
 /* ------ Breakpoints ------ */
