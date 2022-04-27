@@ -16,11 +16,32 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Section Wrapper */
 .section-wrapper {
   border: 2px solid #dddddd;
   padding: 1.5625rem 0.9375rem;
 }
 
+/* Keyframes */
+@keyframes horizontalMove {
+  0% {
+    -webkit-transform: translateX(150px);
+    -ms-transform: translateX(150px);
+    transform: translateX(150px);
+  }
+  100% {
+    -webkit-transform: translateX(0);
+    -ms-transform: translateX(0);
+    transform: translateX(0);
+  }
+}
+@keyframes rotation {
+  100% {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 body {
   color: #000000;
   font-family: "Ubuntu", sans-serif;
@@ -258,6 +279,26 @@ select {
 }
 .more-courses__list a:hover {
   color: #FFAF6D;
+}
+.more-courses__image {
+  display: flex;
+  justify-content: center;
+  margin-block-start: 1.875rem;
+}
+.more-courses__image svg {
+  width: 9.375rem;
+}
+.more-courses__image svg #code {
+  -webkit-animation: horizontalMove 2s ease-in-out alternate infinite;
+  animation: horizontalMove 2s ease-in-out alternate infinite;
+}
+.more-courses__image svg #gear {
+  -webkit-animation: rotation 5s linear infinite both;
+  animation: rotation 5s linear infinite both;
+  -webkit-transform-origin: center center;
+  -ms-transform-origin: center center;
+  transform-origin: center center;
+  transform-box: fill-box;
 }
 
 .business__detail {

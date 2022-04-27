@@ -27,4 +27,26 @@
         }
     }
 
+    // Image
+    &__image {
+        display: flex;
+        justify-content: center;
+        margin-block-start: 1.875rem;
+        svg {
+            width: 9.375rem;
+            #code {
+                -webkit-animation: horizontalMove 2s ease-in-out alternate infinite;
+                animation: horizontalMove 2s ease-in-out alternate infinite;
+            }
+            #gear {
+                -webkit-animation: rotation 5s linear infinite both;
+                animation: rotation 5s linear infinite both;
+                -webkit-transform-origin: center center;
+                -ms-transform-origin: center center;
+                transform-origin: center center;
+                transform-box: fill-box;
+            }
+        }
+    }
+
 }
