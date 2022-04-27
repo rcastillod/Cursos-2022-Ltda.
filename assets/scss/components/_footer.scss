@@ -1,0 +1,56 @@
+.footer {
+    // Copyright
+    &__copyright {
+        p {
+            color: map-get($white-color, '900' );
+            text-align: center;
+        }
+    }
+    
+    // Info
+    &__info {
+        align-items: center;
+        display: flex;
+        gap: .9375rem;
+        @extend %mobile-orientation;
+        @include breakpoint-up(map-get($breakpoints, 'medium')) {
+            gap: 1.875rem;
+        }
+    }
+    
+    // Menu
+    &__nav {
+        align-items: center;
+        display: flex;
+        gap: .9375rem;
+        margin: 0;
+        padding: 0;
+        @extend %mobile-orientation;
+        @include breakpoint-up(map-get($breakpoints, 'medium')) {
+            gap: 1.875rem;
+        }
+        a {
+            color: map-get($white-color, '900' );
+            text-decoration: none;
+            -webkit-transition: color .3s ease-in-out;
+            -o-transition: color .3s ease-in-out;
+            transition: color .3s ease-in-out;
+            &:hover,
+            &:focus {
+                color: map-get($secondary-color, '900' );
+            }
+        }
+    }
+    
+    // Newsletter
+    &__newsletter {
+        .form-group {
+            display: flex;
+            gap: .625rem;
+            @extend %mobile-orientation;
+            .btn {
+                align-self: center;
+            }
+        }
+    }
+}

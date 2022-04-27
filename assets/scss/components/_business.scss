@@ -31,6 +31,8 @@
         padding: 0;
         a {
             color: map-get($primary-color, '900' );
+            -webkit-transition: color .3s ease-in-out;
+            -o-transition: color .3s ease-in-out;
             transition: color .3s ease-in-out;
             &:hover,
             &:focus {

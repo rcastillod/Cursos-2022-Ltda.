@@ -2,10 +2,24 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Container */
+.container {
+    margin-inline: auto;
+    width: min(100% - 2rem, 75rem);
+}
+
 /* Section Wrapper */
 .section-wrapper {
     border: 2px solid #dddddd;
     padding: 1.5625rem .9375rem;
+}
+
+/* Orientation */
+%mobile-orientation {
+    flex-direction: column;
+    @include breakpoint-up(map-get($breakpoints, 'medium')) {
+        flex-direction: row; 
+    }
 }
 
 /* Keyframes */
@@ -14,13 +28,13 @@ html {
 @keyframes horizontalMove {
     0% {
         -webkit-transform: translateX(150px);
-            -ms-transform: translateX(150px);
-                transform: translateX(150px);
+        -ms-transform: translateX(150px);
+        transform: translateX(150px);
     }
     100% {
         -webkit-transform: translateX(0);
-            -ms-transform: translateX(0);
-                transform: translateX(0);
+        -ms-transform: translateX(0);
+        transform: translateX(0);
     }
 }
 
@@ -28,7 +42,7 @@ html {
 @keyframes rotation {
     100% {
         -webkit-transform: rotate(360deg);
-            -ms-transform: rotate(360deg);
-                transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
     }
 }

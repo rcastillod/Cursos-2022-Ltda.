@@ -10,8 +10,12 @@ $primary-color: (
 
 // Secondary Color
 $secondary-color: (
-    '900': #FFAF6D,
-    '800': #FFA500,
+    // Colores segun la maqueta (no coinciden)
+    // '900': #FFAF6D,
+    // '800': #FFA500,
+    // Colores copiados desde el pdf
+    '900': #FF7A00,
+    '800': #FFA000,
 );
 
 // White Color
@@ -57,4 +61,4 @@ $breakpoints: (
 /* ------ Border ------ */
 
 // Radius
-$br: 1.875rem;
+$br: .3125em;

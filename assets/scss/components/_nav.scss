@@ -24,6 +24,8 @@
             i {
                 color: map-get($white-color, '900' );
                 font-size: 1.875rem;
+                -webkit-transition: color .3s ease-in-out;
+                -o-transition: color .3s ease-in-out;
                 transition: color .3s ease-in-out;
             }
             &:hover,
@@ -50,6 +52,13 @@
             color: map-get($white-color, '900' );
             font-weight: map-get($text-fw, 'bold' );
             text-decoration: none;
+            -webkit-transition: color .3s ease-in-out;
+            -o-transition: color .3s ease-in-out;
+            transition: color .3s ease-in-out;
+            &:hover,
+            &:focus {
+                color: map-get($secondary-color, '900' );
+            }
         }
     }
     

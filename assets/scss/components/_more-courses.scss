@@ -20,6 +20,8 @@
             color: map-get($primary-color, '700' );
             font-family: $link-ff;
             text-decoration: none;
+            -webkit-transition: color .3s ease-in-out;
+            -o-transition: color .3s ease-in-out;
             transition: color .3s ease-in-out;
             &:hover {
                 color: map-get($secondary-color, '900' );

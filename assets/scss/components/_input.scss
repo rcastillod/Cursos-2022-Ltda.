@@ -1,14 +1,18 @@
-.btn {
-    background-color: map-get($secondary-color, '900' );
+input,
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="password"],
+input[type="select"],
+textarea {
     border: 0;
     border-radius: $br;
-    cursor: pointer;
     padding: .3125em .625em;
     -webkit-transition: background .3s ease-in-out;
     -o-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
-    &:hover,
     &:focus {
-        background-color: map-get($white-color, '900' );
+        background-color: map-get($secondary-color, '800' );
+        outline: none;
     }
 }

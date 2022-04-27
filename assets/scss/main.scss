@@ -25,7 +25,8 @@
 @import 
     'layout/header',
     'layout/grid',
-    'layout/courses';
+    'layout/courses',
+    'layout/footer';
 
 /* -------------------------------------------------------------------------- */
 /*                                 Components                                 */
@@ -36,7 +37,9 @@
     'components/course',
     'components/more-courses',
     'components/business',
-    'components/buttons';
+    'components/input',
+    'components/buttons',
+    'components/footer';
 
 /* -------------------------------------------------------------------------- */
 /*                                    Pages                                   */

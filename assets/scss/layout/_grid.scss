@@ -1,6 +1,10 @@
 .grid-wrapper {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: 1fr;
     gap: 1.5625rem;
-    padding-inline: 1.5625rem;
+    padding: .9375rem;
+    @include breakpoint-up(map-get($breakpoints, 'medium')) {
+        grid-template-columns: repeat(2, 1fr);
+        padding-inline: 1.5625rem;
+    }
 }
